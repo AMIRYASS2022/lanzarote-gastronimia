@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Search, Loader2 } from 'lucide-react';
+import { Search, Loader2, MapPin } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../translations';
 
@@ -8,9 +8,10 @@ interface HeroProps {
   onSearch: (query: string) => void;
   isSearching: boolean;
   language: Language;
+  onNearMe?: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ onSearch, isSearching, language }) => {
+const Hero: React.FC<HeroProps> = ({ onSearch, isSearching, language, onNearMe }) => {
   const [inputValue, setInputValue] = useState('');
   const t = translations[language];
 
@@ -56,6 +57,16 @@ const Hero: React.FC<HeroProps> = ({ onSearch, isSearching, language }) => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
             />
+            {onNearMe && (
+                <button 
+                  type="button" 
+                  onClick={onNearMe}
+                  className="hidden md:flex items-center text-stone-500 hover:text-teal-600 px-3 border-l border-stone-200"
+                  title="Search Near Me"
+                >
+                    <MapPin size={20} />
+                </button>
+            )}
             <button 
               type="submit" 
               disabled={isSearching}

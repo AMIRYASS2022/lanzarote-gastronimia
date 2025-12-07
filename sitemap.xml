@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN PAGES -->
+  <url><loc>https://www.lanzarotegastro.com/</loc><lastmod>2025-01-07</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/</loc><lastmod>2025-01-07</lastmod><changefreq>daily</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/mapa/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/sobre-nosotros/</loc><lastmod>2025-01-07</lastmod><changefreq>yearly</changefreq><priority>0.50</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/contacto/</loc><lastmod>2025-01-07</lastmod><changefreq>yearly</changefreq><priority>0.50</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/politica-de-privacidad/</loc><lastmod>2025-01-07</lastmod><changefreq>yearly</changefreq><priority>0.40</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/terminos-de-servicio/</loc><lastmod>2025-01-07</lastmod><changefreq>yearly</changefreq><priority>0.40</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/politica-de-cookies/</loc><lastmod>2025-01-07</lastmod><changefreq>yearly</changefreq><priority>0.40</priority></url>
+
+  <!-- === MATRIX: ZONES X CUISINES === -->
+  
+  <!-- PUERTO DEL CARMEN -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/italiana/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/asiatica/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/tapas/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/fine-dining/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+
+  <!-- PLAYA BLANCA -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/italiana/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/asiatica/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/tapas/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/vegetariana/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+
+  <!-- COSTA TEGUISE -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/italiana/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/asiatica/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/tapas/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/bar-pub/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+
+  <!-- ARRECIFE -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/italiana/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/tapas/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/arrecife/gourmet/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+
+  <!-- FAMARA -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/famara/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/famara/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/famara/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/famara/surf-food/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- TEGUISE (VILLA) -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/teguise/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/teguise/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/teguise/tapas/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/teguise/historico/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- YAIZA -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/yaiza/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/yaiza/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/yaiza/carne/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- HARÍA -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/haria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/haria/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/haria/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- SAN BARTOLOMÉ -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/san-bartolome/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/san-bartolome/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- TINAJO -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/tinajo/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/tinajo/canaria/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/tinajo/pescado-y-marisco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.75</priority></url>
+
+  <!-- REAL RESTAURANT LISTINGS (DB) -->
+  <url><loc>https://www.lanzarotegastro.com/restaurante/el-balcon-de-femes/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/kamezi-deli-bistro/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/cofradia-de-pescadores-puerto-del-carmen/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/la-bodega-de-santiago/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/el-amanecer-arrieta/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/lani-s-gourmet-restaurant/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/restaurante-lilium/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/la-carmencita-del-puerto/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/casa-carlos/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/cantina-teguise/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/divina-italia-costa-teguise/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurante/el-risco/</loc><lastmod>2025-01-07</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
+
+  <!-- EXAMPLE DYNAMIC LISTINGS (Pattern) -->
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/puerto-del-carmen/restaurante-001/</loc><lastmod>2025-01-07</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/playa-blanca/restaurante-002/</loc><lastmod>2025-01-07</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <url><loc>https://www.lanzarotegastro.com/restaurantes/costa-teguise/restaurante-003/</loc><lastmod>2025-01-07</lastmod><changefreq>monthly</changefreq><priority>0.60</priority></url>
+  <!-- ... continues for other IDs ... -->
+
+</urlset>

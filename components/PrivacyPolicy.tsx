@@ -78,7 +78,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
               <br /><br />
               <strong>LanzaroteGastro Support</strong><br />
               Email: <a href="mailto:lanzarotegastrorestaurant@gmail.com" className="text-teal-600 hover:underline">Send us a message</a><br />
-              Address: Arrecife, Lanzarote, Spain
+              Address: Lanzarote, Spain
             </p>
           </div>
         </div>
