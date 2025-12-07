@@ -1,0 +1,5 @@
+{
+  "name": "LanzaroteGastro - Lanzarote Restaurant Directory",
+  "description": "A curated, AI-powered directory for discovering the best culinary experiences in Lanzarote. Filter by cuisine, location, or ask our AI guide for personalized recommendations using real-time Google Maps data.",
+  "requestFramePermissions": []
+}
