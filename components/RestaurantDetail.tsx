@@ -1,26 +1,17 @@
 
 import React, { useRef, useState, useEffect } from 'react';
-import { RestaurantDetails, Language, PlaceData } from '../types';
+import { RestaurantDetails, Language } from '../types';
 import { translations } from '../translations';
 import { MapPin, Globe, Phone, Clock, Star, Share2, ChevronLeft, Calendar, CheckCircle2, Printer, Map as MapIcon, X, Copy, Check, Facebook, Twitter, Mail, MessageCircle, Maximize2, Minimize2, Linkedin, Send } from 'lucide-react';
 import AdBanner from './AdBanner'; // Import AdBanner
-import RestaurantCard from './RestaurantCard'; // Import RestaurantCard for "You Might Also Like"
 
 interface RestaurantDetailProps {
   restaurant: RestaurantDetails;
   onBack: () => void;
   language: Language;
-  onViewDetails?: (place: PlaceData) => void;
 }
 
-// Dummy data for "You Might Also Like" section
-const RELATED_PLACES: PlaceData[] = [
-    { title: "El Balcón de Femés", uri: "#", reviewSnippet: "Stunning views and traditional goat stew.", sourceIndex: 1, rating: 4.8, reviewsCount: 850, priceLevel: 2 },
-    { title: "La Bodega de Santiago", uri: "#", reviewSnippet: "Authentic atmosphere under a giant tree.", sourceIndex: 2, rating: 4.7, reviewsCount: 620, priceLevel: 3 },
-    { title: "Kamezí Deli & Bistro", uri: "#", reviewSnippet: "Modern tasting menus with local ingredients.", sourceIndex: 3, rating: 4.9, reviewsCount: 310, priceLevel: 4 },
-];
-
-const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack, language, onViewDetails }) => {
+const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack, language }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const [highlightMap, setHighlightMap] = useState(false);
   const [isMapExpanded, setIsMapExpanded] = useState(false);
@@ -71,9 +62,22 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
     }
   };
 
-  const handleShare = () => {
-    // Always open the custom modal to ensure consistent UI and options
-    setIsShareModalOpen(true);
+  const handleShare = async () => {
+    const shareData = {
+        title: restaurant.title,
+        text: `Check out ${restaurant.title} on LanzaroteGastro - The Lanzarote Restaurant Directory.`,
+        url: window.location.href
+    };
+
+    if (navigator.share) {
+        try {
+            await navigator.share(shareData);
+        } catch (err) {
+            console.log('Share canceled or failed', err);
+        }
+    } else {
+        setIsShareModalOpen(true);
+    }
   };
 
   const copyToClipboard = () => {
@@ -237,7 +241,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                     </div>
                 </div>
 
-                <div className="mb-12">
+                <div>
                     <h2 className="text-sm font-bold text-stone-400 uppercase tracking-widest mb-6">{t.guestReviews}</h2>
                     <div className="space-y-8">
                         {restaurant.reviews?.map((review, i) => (
@@ -258,24 +262,6 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                         ))}
                     </div>
                 </div>
-
-                {/* You Might Also Like Section */}
-                <div>
-                   <h2 className="text-sm font-bold text-stone-400 uppercase tracking-widest mb-6">{t.youMightLike}</h2>
-                   <div className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory">
-                      {RELATED_PLACES.map((place, idx) => (
-                          <div key={idx} className="min-w-[280px] w-[280px] snap-center">
-                              <RestaurantCard 
-                                  place={place} 
-                                  index={idx}
-                                  onViewDetails={(p) => onViewDetails && onViewDetails(p)}
-                                  language={language}
-                              />
-                          </div>
-                      ))}
-                   </div>
-                </div>
-
             </div>
 
             {/* Right Column: Meta Data */}
@@ -295,20 +281,16 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                         </li>
                         {restaurant.phoneNumber && (
                             <li className="flex items-start gap-4">
-                                <a href={`tel:${restaurant.phoneNumber.replace(/\s/g, '')}`} className="text-teal-600 mt-1 shrink-0 hover:text-teal-700">
-                                    <Phone size={18} />
-                                </a>
+                                <Phone size={18} className="text-teal-600 mt-1 shrink-0" />
                                 <div>
                                     <div className="text-xs font-bold text-stone-400 uppercase mb-0.5">{t.telephone}</div>
-                                    <a href={`tel:${restaurant.phoneNumber.replace(/\s/g, '')}`} className="text-sm text-stone-800 font-medium hover:text-teal-600">{restaurant.phoneNumber}</a>
+                                    <a href={`tel:${restaurant.phoneNumber}`} className="text-sm text-stone-800 font-medium hover:text-teal-600">{restaurant.phoneNumber}</a>
                                 </div>
                             </li>
                         )}
                         {restaurant.website && (
                             <li className="flex items-start gap-4">
-                                <a href={restaurant.website} target="_blank" rel="noopener noreferrer" className="text-teal-600 mt-1 shrink-0 hover:text-teal-700">
-                                    <Globe size={18} />
-                                </a>
+                                <Globe size={18} className="text-teal-600 mt-1 shrink-0" />
                                 <div>
                                     <div className="text-xs font-bold text-stone-400 uppercase mb-0.5">{t.online}</div>
                                     <a href={restaurant.website} target="_blank" rel="noopener noreferrer" className="text-sm text-stone-800 font-medium hover:text-teal-600 truncate max-w-[200px] block">
@@ -409,7 +391,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                 <div className="flex flex-wrap justify-center gap-4">
                     <a 
                         href={facebookLink}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank" rel="noreferrer"
                         className="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-blue-500/20"
                         title="Share on Facebook"
                     >
@@ -417,7 +399,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                     </a>
                     <a 
                         href={twitterLink}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank" rel="noreferrer"
                         className="w-12 h-12 rounded-full bg-[#1DA1F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-sky-500/20"
                         title="Share on X (Twitter)"
                     >
@@ -425,7 +407,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                     </a>
                     <a 
                         href={whatsappLink}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank" rel="noreferrer"
                         className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-green-500/20"
                         title="Share on WhatsApp"
                     >
@@ -433,7 +415,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                     </a>
                     <a 
                         href={linkedinLink}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank" rel="noreferrer"
                         className="w-12 h-12 rounded-full bg-[#0077b5] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-blue-600/20"
                         title="Share on LinkedIn"
                     >
@@ -441,7 +423,7 @@ const RestaurantDetail: React.FC<RestaurantDetailProps> = ({ restaurant, onBack,
                     </a>
                     <a 
                         href={telegramLink}
-                        target="_blank" rel="noopener noreferrer"
+                        target="_blank" rel="noreferrer"
                         className="w-12 h-12 rounded-full bg-[#0088cc] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-sky-400/20"
                         title="Share on Telegram"
                     >

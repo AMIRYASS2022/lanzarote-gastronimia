@@ -16,7 +16,7 @@ const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({ onCategorySelec
     {
       id: 'seafood',
       name: t.catSeafood,
-      query: t.catSeafood + ' Lanzarote', // Append location to help context
+      query: t.catSeafood + ' Lanzarote', // Append Lanzarote to help context
       icon: '🐟',
       image: 'https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?q=80&w=800&auto=format&fit=crop'
     },

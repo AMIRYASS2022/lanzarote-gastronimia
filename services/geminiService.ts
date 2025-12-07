@@ -2,23 +2,8 @@
 import { GoogleGenAI, GenerateContentResponse, Type } from "@google/genai";
 import { SearchResult, PlaceData, RestaurantDetails, Language } from "../types";
 
-// Safe access to API Key using multiple strategies
-const getApiKey = (): string | undefined => {
-    // Strategy 1: Standard Node process.env (Build time / Server)
-    if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
-        return process.env.API_KEY;
-    }
-    
-    // Strategy 2: Window process polyfill (Browser runtime)
-    // We cast window to any to avoid strict TS checks here, as global types cover it mostly
-    if (typeof window !== 'undefined' && (window as any).process?.env?.API_KEY) {
-        return (window as any).process.env.API_KEY;
-    }
-    
-    return undefined;
-};
-
-const apiKey = getApiKey();
+// Safe access to API Key
+const apiKey = (typeof process !== 'undefined' && process.env) ? process.env.API_KEY : undefined;
 
 // Initialize Gemini Client
 const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
@@ -27,8 +12,7 @@ const modelId = "gemini-2.5-flash";
 
 export const searchRestaurants = async (query: string, language: Language = 'de', userLocation?: { lat: number, lng: number }): Promise<SearchResult> => {
   if (!ai) {
-    console.error("Gemini Client not initialized. Missing API Key.");
-    throw new Error("Service unavailable. Please check configuration.");
+    throw new Error("API Key is missing. Please ensure process.env.API_KEY is set.");
   }
 
   // Language map for system instruction
@@ -43,22 +27,17 @@ export const searchRestaurants = async (query: string, language: Language = 'de'
   try {
     const response: GenerateContentResponse = await ai.models.generateContent({
       model: modelId,
-      contents: `You are the core database engine for "LanzaroteGastro", the premier restaurant directory for Lanzarote.
+      contents: `You are the engine for "LanzaroteGastro", a premium restaurant directory for Lanzarote.
+      The user is searching for: "${query}". 
       
-      User Query: "${query}"
-      User Location: ${userLocation ? `Lat: ${userLocation.lat}, Lng: ${userLocation.lng}` : "Not provided"}
-      
-      TASK: 
-      Return a high-quality list of restaurants in Lanzarote that match the query.
-      If the query is generic (e.g., "Top restaurants"), provide a diverse mix from Puerto del Carmen, Playa Blanca, and Arrecife.
-      If User Location is provided, prioritize distance but keep quality high.
+      Provide a curated list of the best matching restaurants using Google Maps.
       
       IMPORTANT: The user speaks ${targetLang}. 
       All descriptions, analysis, and text in the response MUST be in ${targetLang}.
       
-      For each restaurant, write a short, punchy "Directory Listing" description. Mention the exact location (e.g., "Marina Rubicón", "Old Town").
+      For each restaurant found, provide a compelling, directory-style description highlighting its specialty (e.g., "Frischer Fisch mit Meerblick", "Traditioneller Ziegeneintopf").
       
-      Tone: Authoritative, inviting, and specific.`,
+      Tone: Professional, appetizing, and informative.`,
       config: {
         tools: [{ googleMaps: {} }],
         toolConfig: userLocation ? {
@@ -106,7 +85,7 @@ export const searchRestaurants = async (query: string, language: Language = 'de'
 
 export const getRestaurantDetails = async (place: PlaceData, language: Language = 'de'): Promise<RestaurantDetails> => {
   if (!ai) {
-    throw new Error("Service unavailable.");
+    throw new Error("API Key is missing.");
   }
 
   const langMap = {
@@ -120,32 +99,33 @@ export const getRestaurantDetails = async (place: PlaceData, language: Language 
   // We use the AI to 'hallucinate' plausible detailed data for the directory view
   // since we don't have a real backend database for menus/specific hours.
   const prompt = `
-    Generate a complete, verified-style Directory Profile for "${place.title}" in Lanzarote.
-    I need comprehensive details including a realistic Menu, Opening Hours, Contact Info, and detailed Reviews.
+    Generate a detailed directory profile for the restaurant "${place.title}" in Lanzarote.
+    I need a realistic Menu, Opening Hours, and detailed Reviews.
     
-    output Language: ${targetLang}.
+    IMPORTANT: The user speaks ${targetLang}. All content (Menu items, Descriptions, Reviews) MUST be in ${targetLang}.
     
-    IMPORTANT:
-    1. Description must be SEO optimized (150-160 chars) mentioning cuisine, location, and atmosphere.
-    2. Menu must reflect the actual cuisine of this place (e.g. if it's a Steakhouse, show Steaks).
-    3. Address must be realistic for Lanzarote.
+    IMPORTANT for SEO: The 'description' field MUST be 150-160 characters long and include the Restaurant Name, the specific town/area in Lanzarote, and the type of cuisine.
     
-    Return JSON matching this schema:
+    Return the response in JSON format matching this schema:
     {
-      "description": "Description in ${targetLang}...",
-      "address": "Calle Teide 5, Puerto del Carmen, 35510 Lanzarote",
-      "phoneNumber": "+34 928 ...",
-      "website": "https://...",
-      "openingHours": ["Mo-Su: 12:00 - 23:00"],
-      "features": ["Terrace", "Ocean View", "WiFi"],
+      "description": "Erleben Sie authentische [Küche] im ${place.title} in [Ortsname], Lanzarote. Hoch bewertet für [Spezialität]. Reservieren Sie noch heute.",
+      "address": "Realistic address in Lanzarote",
+      "phoneNumber": "Local phone number format",
+      "website": "url",
+      "openingHours": ["Mo-So: 12:00 - 23:00", ...],
+      "features": ["Terrasse", "Meerblick", "Vegane Optionen"],
       "menu": [
         {
-          "title": "Starters",
-          "items": [{"name": "Dish", "description": "Ingredients", "price": "€12"}]
+          "title": "Vorspeisen",
+          "items": [{"name": "Gerichtname", "description": "Zutaten", "price": "€12"}]
+        },
+        {
+           "title": "Hauptgerichte",
+           "items": [{"name": "Gerichtname", "description": "Zutaten", "price": "€24"}]
         }
       ],
       "reviews": [
-        {"author": "Reviewer Name", "rating": 5, "text": "Detailed review text...", "date": "2 weeks ago"}
+        {"author": "Name", "rating": 5, "text": "Review text", "date": "vor 2 Wochen"}
       ]
     }
   `;
@@ -217,20 +197,21 @@ export const getRestaurantDetails = async (place: PlaceData, language: Language 
       ...place,
       ...details,
       images,
-      rating: place.rating || 4.5, 
+      rating: place.rating || 4.5, // Fallback if not passed
       reviewsCount: place.reviewsCount || 120
     };
 
   } catch (error) {
     console.error("Error fetching details:", error);
+    // Return a basic fallback so the app doesn't crash
     return {
       ...place,
       images: [],
-      openingHours: ["Daily: 12:00 - 23:00"],
+      openingHours: ["Täglich: 12:00 - 23:00"],
       menu: [],
       reviews: [],
       features: [],
-      description: "Details currently unavailable."
+      description: "Details derzeit nicht verfügbar."
     };
   }
 };

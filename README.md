@@ -1,32 +1,20 @@
-# LanzaroteGastro
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## How to deploy to Netlify
+# Run and deploy your AI Studio app
 
-1. **Initialize Git**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   ```
+This contains everything you need to run your app locally.
 
-2. **Push to GitHub**
-   - Create a new repository on GitHub.
-   - Follow the instructions to push an existing repository:
-     ```bash
-     git remote add origin https://github.com/YOUR_USERNAME/lanzarote-gastro.git
-     git branch -M main
-     git push -u origin main
-     ```
+View your app in AI Studio: https://ai.studio/apps/drive/1hkRBoHTemEMQp18sdG_5Y75G-aze9mrZ
 
-3. **Connect to Netlify**
-   - Go to [Netlify](https://www.netlify.com/).
-   - Click "Add new site" > "Import an existing project".
-   - Select **GitHub**.
-   - Choose your `lanzarote-gastro` repository.
-   - **Build Settings:**
-     - Build command: `npm run build`
-     - Publish directory: `dist`
-   - Click **Deploy Site**.
+## Run Locally
 
-## Environment Variables
-If you are using the AI features, remember to add your `API_KEY` in the Netlify Site Settings > Environment Variables.
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

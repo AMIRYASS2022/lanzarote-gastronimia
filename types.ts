@@ -35,25 +35,16 @@ export interface SearchResult {
 }
 
 export interface PlaceData {
-  id?: string;
-  slug?: string;
   title: string;
   uri: string;
   reviewSnippet?: string;
   sourceIndex: number;
+  // Enhanced fields for the detailed view (populated by AI or defaults)
   description?: string;
   address?: string;
   rating?: number;
   reviewsCount?: number;
   priceLevel?: number;
-  image?: string;
-  // Specific Directory Fields
-  zone?: string;
-  cuisine?: string[];
-  coordinates?: {
-    lat: number;
-    lng: number;
-  };
 }
 
 export interface MenuItem {
@@ -104,7 +95,5 @@ export type Language = 'en' | 'es' | 'fr' | 'de';
 declare global {
   interface Window {
     adsbygoogle: any[];
-    // process definition removed to avoid conflict with var process in index.html polyfill
-    // The polyfill ensures window.process exists at runtime.
   }
 }

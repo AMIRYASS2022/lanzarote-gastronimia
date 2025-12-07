@@ -5,8 +5,8 @@ export const translations = {
   en: {
     heroTitle: "The Definitive",
     heroTitleHighlight: "Restaurant Directory",
-    heroSubtitle: "Search hundreds of local tables. Filter by cuisine, location, or atmosphere. Your curated guide to dining in Lanzarote.",
-    searchPlaceholder: "Search by name, area (e.g. Puerto del Carmen), or craving...",
+    heroSubtitle: "Search hundreds of local tables. Filter by cuisine, location, or atmosphere. Your curated guide to dining on the island of eternal spring.",
+    searchPlaceholder: "Search by name, area (e.g. Playa Blanca), or craving...",
     findTable: "Find Table",
     searching: "Searching...",
     trending: "Trending:",
@@ -17,11 +17,11 @@ export const translations = {
     
     // Categories
     catSeafood: "Fresh Seafood",
-    catWine: "La Geria Wines",
+    catWine: "La Geria Wine & Dining",
     catFineDining: "Fine Dining",
-    catLocal: "Local Gems",
+    catLocal: "Local Guachinches",
     catDiscover: "Discover the best spots",
-    catSubtitle: "Explore the diverse culinary landscape of the island, from the volcanic vineyards of La Geria to the fishing villages of the coast.",
+    catSubtitle: "Explore the diverse culinary landscape of the island, from volcanic vineyards to seaside gems.",
     curatedCollections: "Curated Collections",
 
     // Filters
@@ -61,7 +61,6 @@ export const translations = {
     copied: "Copied",
     copy: "Copy",
     loading: "Loading directory listing...",
-    youMightLike: "You Might Also Like",
     
     // Newsletter
     newsletterTitle: "Join the Culinary Club",
@@ -72,16 +71,15 @@ export const translations = {
     subscribeError: "Please enter a valid email.",
 
     // Footer
-    footerDesc: "The ultimate directory for finding the best culinary experiences in Lanzarote. From historic tapas bars to fresh Atlantic catches, we guide you to the perfect table.",
+    footerDesc: "The ultimate directory for finding the best culinary experiences in Lanzarote. From volcanic vineyards to fresh Atlantic catches, we guide you to the perfect table.",
     topLocations: "Top Locations",
     cuisines: "Cuisines",
     rights: "All rights reserved.",
     privacy: "Privacy Policy",
     terms: "Terms of Service",
-    aboutUs: "About Us",
-    cookiePolicy: "Cookie Policy",
     contactUsLabel: "Contact Us",
 
+    // Search Status
     searchingDir: "Searching directory...",
     curating: "Curating the best tables for you",
     searchUnavailable: "Search Unavailable",
@@ -103,7 +101,7 @@ export const translations = {
         "Restaurants in Playa Blanca",
         "Restaurants in Costa Teguise",
         "Restaurants in Arrecife",
-        "Best seafood in El Golfo",
+        "Best seafood in Lanzarote",
         "Authentic Canarian food",
         "Restaurants with ocean view",
         "Cheap eats Lanzarote",
@@ -113,29 +111,15 @@ export const translations = {
         "Best paella in Lanzarote",
         "Tapas in Arrecife",
         "Vegan restaurants Lanzarote",
-        "Steakhouse Puerto Calero",
+        "Steakhouse Puerto del Carmen",
         "Breakfast in Playa Blanca",
         "Lunch with a view"
-    ],
-
-    // About Us Page
-    aboutUsTitle: "About LanzaroteGastro – Your Restaurant Guide in Lanzarote",
-    aboutUsText1: "LanzaroteGastro is your professional restaurant directory in Lanzarote, designed especially for tourists and locals who want to discover the best places to eat on the island. Our goal is to help you find restaurants near you, with up-to-date information, Google reviews, and authentic photos.",
-    aboutUsText2: "We filter by zone and cuisine type, from traditional Canarian restaurants to international options, so you have all the information in one place.",
-    aboutUsText3: "We are passionate about gastronomy and want your experience in Lanzarote to be unforgettable. Every restaurant we include is carefully verified and regularly updated to offer you a reliable and useful guide.",
-    aboutUsQuote: "Explore, discover, and enjoy the flavors of Lanzarote with LanzaroteGastro!",
-
-    // Cookie Policy Page
-    cookiePolicyTitle: "Cookie Policy",
-    cookieLead: "This website uses cookies to improve your browsing experience and provide you with personalized content.",
-    cookieP1: "Cookies allow us to remember your preferences, analyze site traffic, and show relevant information about restaurants and services in Lanzarote.",
-    cookieP2: "You can accept all cookies to enjoy the best experience, or configure them according to your preferences. Essential cookies are necessary for the operation of the site and cannot be disabled.",
-    cookieP3: "By continuing to browse, you accept our cookie policy. For more information, consult our Privacy Policy and adjust your preferences whenever you wish."
+    ]
   },
   es: {
     heroTitle: "El Directorio",
     heroTitleHighlight: "Definitivo de Restaurantes",
-    heroSubtitle: "Busca entre cientos de mesas locales. Filtra por cocina, ubicación o ambiente. Tu guía curada para cenar en Lanzarote.",
+    heroSubtitle: "Busca entre cientos de mesas locales. Filtra por cocina, ubicación o ambiente. Tu guía curada para cenar en la isla de la eterna primavera.",
     searchPlaceholder: "Buscar por nombre, zona (ej. Playa Blanca) o antojo...",
     findTable: "Buscar Mesa",
     searching: "Buscando...",
@@ -148,9 +132,9 @@ export const translations = {
     catSeafood: "Marisco Fresco",
     catWine: "Vinos de La Geria",
     catFineDining: "Alta Cocina",
-    catLocal: "Joyas Locales",
+    catLocal: "Guachinches Locales",
     catDiscover: "Descubre los mejores sitios",
-    catSubtitle: "Explora el diverso paisaje culinario de la isla, desde los viñedos volcánicos de La Geria hasta los pueblos pesqueros de la costa.",
+    catSubtitle: "Explora el diverso paisaje culinario de la isla, desde viñedos volcánicos hasta joyas junto al mar.",
     curatedCollections: "Colecciones Curadas",
 
     filters: "Filtros",
@@ -187,7 +171,6 @@ export const translations = {
     copied: "Copiado",
     copy: "Copiar",
     loading: "Cargando ficha del directorio...",
-    youMightLike: "También te podría gustar",
 
     // Newsletter
     newsletterTitle: "Únete al Club Culinario",
@@ -197,14 +180,12 @@ export const translations = {
     subscribedSuccess: "¡Bienvenido al club!",
     subscribeError: "Por favor introduce un email válido.",
 
-    footerDesc: "El directorio definitivo para encontrar las mejores experiencias culinarias en Lanzarote. Desde bares de tapas históricos hasta pesca fresca del Atlántico.",
+    footerDesc: "El directorio definitivo para encontrar las mejores experiencias culinarias en Lanzarote. Desde viñedos volcánicos hasta pesca fresca del Atlántico, te guiamos a la mesa perfecta.",
     topLocations: "Ubicaciones Top",
     cuisines: "Cocinas",
     rights: "Todos los derechos reservados.",
     privacy: "Política de Privacidad",
     terms: "Términos de Servicio",
-    aboutUs: "Sobre Nosotros",
-    cookiePolicy: "Política de Cookies",
     contactUsLabel: "Contáctanos",
 
     searchingDir: "Buscando en el directorio...",
@@ -228,7 +209,7 @@ export const translations = {
         "Restaurantes en Playa Blanca",
         "Restaurantes en Costa Teguise",
         "Restaurantes en Arrecife",
-        "Pescado en El Golfo",
+        "Restaurantes de pescado Lanzarote",
         "Comida canaria típica",
         "Restaurantes con vistas al mar",
         "Restaurantes baratos Lanzarote",
@@ -238,24 +219,10 @@ export const translations = {
         "Mejor paella en Lanzarote",
         "Tapas en Arrecife",
         "Restaurantes veganos",
-        "Asador en Puerto Calero",
+        "Asador en Puerto del Carmen",
         "Desayuno en Playa Blanca",
         "Almuerzo con vistas"
-    ],
-
-    // About Us Page
-    aboutUsTitle: "Sobre LanzaroteGastro – Tu guía de restaurantes en Lanzarote",
-    aboutUsText1: "LanzaroteGastro es tu directorio profesional de restaurantes en Lanzarote, diseñado especialmente para turistas y locales que quieren descubrir los mejores lugares donde comer en la isla. Nuestro objetivo es ayudarte a encontrar restaurantes cerca de ti, con información actualizada, reseñas de Google y fotos auténticas.",
-    aboutUsText2: "Filtramos por zona y tipo de cocina, desde restaurantes canarios tradicionales hasta opciones internacionales, para que tengas toda la información en un solo lugar.",
-    aboutUsText3: "Nos apasiona la gastronomía y queremos que tu experiencia en Lanzarote sea inolvidable. Cada restaurante que incluimos es cuidadosamente verificado y actualizado regularmente para ofrecerte una guía confiable y útil.",
-    aboutUsQuote: "¡Explora, descubre y disfruta de los sabores de Lanzarote con LanzaroteGastro!",
-
-    // Cookie Policy Page
-    cookiePolicyTitle: "Política de Cookies",
-    cookieLead: "Este sitio web utiliza cookies para mejorar tu experiencia de navegación y proporcionarte contenido personalizado.",
-    cookieP1: "Las cookies nos permiten recordar tus preferencias, analizar el tráfico del sitio y mostrar información relevante sobre restaurantes y servicios en Lanzarote.",
-    cookieP2: "Puedes aceptar todas las cookies para disfrutar de la mejor experiencia, o configurarlas según tus preferencias. Las cookies esenciales son necesarias para el funcionamiento del sitio y no se pueden desactivar.",
-    cookieP3: "Al continuar navegando, aceptas nuestra política de cookies. Para más información, consulta nuestra Política de Privacidad y ajusta tus preferencias cuando lo desees."
+    ]
   },
   fr: {
     heroTitle: "Le Répertoire",
@@ -273,9 +240,9 @@ export const translations = {
     catSeafood: "Fruits de Mer Frais",
     catWine: "Vins de La Geria",
     catFineDining: "Haute Cuisine",
-    catLocal: "Perles Locales",
+    catLocal: "Guachinches Locaux",
     catDiscover: "Découvrir les meilleurs lieux",
-    catSubtitle: "Explorez le paysage culinaire diversifié de l'île, des vignobles volcaniques de La Geria aux villages de pêcheurs de la côte.",
+    catSubtitle: "Explorez le paysage culinaire diversifié de l'île, des vignobles volcaniques aux perles du bord de mer.",
     curatedCollections: "Collections Choisies",
 
     filters: "Filtres",
@@ -312,7 +279,6 @@ export const translations = {
     copied: "Copié",
     copy: "Copier",
     loading: "Chargement de la fiche...",
-    youMightLike: "Vous pourriez aussi aimer",
 
     // Newsletter
     newsletterTitle: "Rejoignez le Club Culinaire",
@@ -322,14 +288,12 @@ export const translations = {
     subscribedSuccess: "Bienvenue au club !",
     subscribeError: "Veuillez entrer un email valide.",
 
-    footerDesc: "Le répertoire ultime pour trouver les meilleures expériences culinaire à Lanzarote. Des bars à tapas historiques aux prises fraîches de l'Atlantique.",
+    footerDesc: "Le répertoire ultime pour trouver les meilleures expériences culinaires à Lanzarote. Des vignobles volcaniques aux prises fraîches de l'Atlantique, nous vous guidons vers la table parfaite.",
     topLocations: "Meilleurs Lieux",
     cuisines: "Cuisines",
     rights: "Tous droits réservés.",
     privacy: "Politique de Confidentialité",
     terms: "Conditions d'Utilisation",
-    aboutUs: "À Propos",
-    cookiePolicy: "Politique de Cookies",
     contactUsLabel: "Contactez-nous",
 
     searchingDir: "Recherche dans le répertoire...",
@@ -353,7 +317,7 @@ export const translations = {
         "Restaurants à Playa Blanca",
         "Restaurants à Costa Teguise",
         "Restaurants à Arrecife",
-        "Meilleurs fruits de mer El Golfo",
+        "Meilleurs fruits de mer Lanzarote",
         "Cuisine canarienne authentique",
         "Restaurants vue mer",
         "Manger pas cher Lanzarote",
@@ -363,30 +327,16 @@ export const translations = {
         "Meilleure paella Lanzarote",
         "Tapas à Arrecife",
         "Restaurants végans",
-        "Steakhouse Puerto Calero",
+        "Steakhouse Puerto del Carmen",
         "Petit-déjeuner Playa Blanca",
         "Déjeuner avec vue"
-    ],
-
-    // About Us Page
-    aboutUsTitle: "À propos de LanzaroteGastro – Votre guide des restaurants à Lanzarote",
-    aboutUsText1: "LanzaroteGastro est votre répertoire professionnel de restaurants à Lanzarote, conçu spécialement pour les touristes et les locaux qui souhaitent découvrir les meilleurs endroits où manger sur l'île. Notre objectif est de vous aider à trouver des restaurants près de chez vous, avec des informations à jour, des avis Google et des photos authentiques.",
-    aboutUsText2: "Nous filtrons par zone et type de cuisine, des restaurants traditionnels canariens aux options internationales, pour que vous ayez toutes les informations en un seul endroit.",
-    aboutUsText3: "Nous sommes passionnés par la gastronomie et nous voulons que votre expérience à Lanzarote soit inoubliable. Chaque restaurant que nous incluons est soigneusement vérifié et régulièrement mis à jour pour vous offrir un guide fiable et utile.",
-    aboutUsQuote: "Explorez, découvrez et profitez des saveurs de Lanzarote avec LanzaroteGastro !",
-
-    // Cookie Policy Page
-    cookiePolicyTitle: "Politique de Cookies",
-    cookieLead: "Ce site utilise des cookies pour améliorer votre expérience de navigation et vous fournir un contenu personnalisé.",
-    cookieP1: "Les cookies nous permettent de mémoriser vos préférences, d'analyser le trafic du site et d'afficher des informations pertinentes sur les restaurants et les services à Lanzarote.",
-    cookieP2: "Vous pouvez accepter tous les cookies pour profiter de la meilleure expérience ou les configurer selon vos préférences. Les cookies essentiels sont nécessaires au fonctionnement du site et ne peuvent pas être désactivés.",
-    cookieP3: "En poursuivant votre navigation, vous acceptez notre politique de cookies. Pour plus d'informations, consultez notre Politique de Confidentialité et ajustez vos préférences quand vous le souhaitez."
+    ]
   },
   de: {
     heroTitle: "Das Ultimative",
     heroTitleHighlight: "Restaurantverzeichnis",
-    heroSubtitle: "Durchsuchen Sie Hunderte von lokalen Tischen. Filtern Sie nach Küche, Ort oder Atmosphäre. Ihr kuratierter Guide für das Essen auf Lanzarote.",
-    searchPlaceholder: "Suche nach Name, Gebiet (z.B. Puerto del Carmen) oder Lust...",
+    heroSubtitle: "Durchsuchen Sie Hunderte von lokalen Tischen. Filtern Sie nach Küche, Ort oder Atmosphäre. Ihr kuratierter Guide für das Essen auf der Insel des ewigen Frühlings.",
+    searchPlaceholder: "Suche nach Name, Gebiet (z.B. Playa Blanca) oder Lust...",
     findTable: "Tisch Finden",
     searching: "Suche...",
     trending: "Trends:",
@@ -396,11 +346,11 @@ export const translations = {
     badge: "Lanzarotes Nr. 1 Food Guide",
 
     catSeafood: "Frische Meeresfrüchte",
-    catWine: "Weine aus La Geria",
+    catWine: "La Geria Wein & Essen",
     catFineDining: "Gehobene Küche",
-    catLocal: "Lokale Geheimtipps",
+    catLocal: "Lokale Guachinches",
     catDiscover: "Entdecken Sie die besten Orte",
-    catSubtitle: "Erkunden Sie die vielfältige kulinarische Landschaft der Insel, von den vulkanischen Weinbergen von La Geria bis zu den Fischerdörfern an der Küste.",
+    catSubtitle: "Erkunden Sie die vielfältige kulinarische Landschaft der Insel, von vulkanischen Weinbergen bis hin zu Juwelen am Meer.",
     curatedCollections: "Kuratierte Sammlungen",
 
     filters: "Filter",
@@ -437,7 +387,6 @@ export const translations = {
     copied: "Kopiert",
     copy: "Kopieren",
     loading: "Lade Verzeichniseintrag...",
-    youMightLike: "Das könnte Ihnen auch gefallen",
 
     // Newsletter
     newsletterTitle: "Tritt dem kulinarischen Club bei",
@@ -447,14 +396,12 @@ export const translations = {
     subscribedSuccess: "Willkommen im Club!",
     subscribeError: "Bitte geben Sie eine gültige E-Mail an.",
 
-    footerDesc: "Das ultimative Verzeichnis für die besten kulinarischen Erlebnisse auf Lanzarote. Von historischen Tapas-Bars bis zu frischem Atlantikfang.",
+    footerDesc: "Das ultimative Verzeichnis für die besten kulinarischen Erlebnisse auf Lanzarote. Von vulkanischen Weinbergen bis zu frischem Atlantikfang, wir führen Sie zum perfekten Tisch.",
     topLocations: "Top Standorte",
     cuisines: "Küchen",
     rights: "Alle Rechte vorbehalten.",
     privacy: "Datenschutzerklärung",
     terms: "Nutzungsbedingungen",
-    aboutUs: "Über Uns",
-    cookiePolicy: "Cookie-Richtlinie",
     contactUsLabel: "Kontaktiere uns",
 
     searchingDir: "Durchsuche Verzeichnis...",
@@ -478,7 +425,7 @@ export const translations = {
         "Restaurants in Playa Blanca",
         "Restaurants in Costa Teguise",
         "Restaurants in Arrecife",
-        "Beste Meeresfrüchte El Golfo",
+        "Beste Meeresfrüchte Lanzarote",
         "Authentisches kanarisches Essen",
         "Restaurants mit Meerblick",
         "Günstig essen Lanzarote",
@@ -488,23 +435,9 @@ export const translations = {
         "Beste Paella auf Lanzarote",
         "Tapas in Arrecife",
         "Vegane Restaurants Lanzarote",
-        "Steakhouse Puerto Calero",
+        "Steakhouse Puerto del Carmen",
         "Frühstück in Playa Blanca",
         "Mittagessen mit Aussicht"
-    ],
-
-    // About Us Page
-    aboutUsTitle: "Über LanzaroteGastro – Ihr Restaurantführer auf Lanzarote",
-    aboutUsText1: "LanzaroteGastro ist Ihr professionelles Restaurantverzeichnis auf Lanzarote, speziell entwickelt für Touristen und Einheimische, die die besten Orte zum Essen auf der Insel entdecken möchten. Unser Ziel ist es, Ihnen zu helfen, Restaurants in Ihrer Nähe zu finden, mit aktuellen Informationen, Google-Bewertungen und authentischen Fotos.",
-    aboutUsText2: "Wir filtern nach Zone und Küchentyp, von traditionellen kanarischen Restaurants bis zu internationalen Optionen, damit Sie alle Informationen an einem Ort haben.",
-    aboutUsText3: "Wir sind leidenschaftlich an Gastronomie interessiert und möchten, dass Ihr Erlebnis auf Lanzarote unvergesslich wird. Jedes Restaurant, das wir aufnehmen, wird sorgfältig geprüft und regelmäßig aktualisiert, um Ihnen einen zuverlässigen und nützlichen Führer zu bieten.",
-    aboutUsQuote: "Erkunden, entdecken und genießen Sie die Aromen von Lanzarote mit LanzaroteGastro!",
-
-    // Cookie Policy Page
-    cookiePolicyTitle: "Cookie-Richtlinie",
-    cookieLead: "Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern und Ihnen personalisierte Inhalte bereitzustellen.",
-    cookieP1: "Cookies ermöglichen es uns, Ihre Präferenzen zu speichern, den Website-Verkehr zu analysieren und relevante Informationen über Restaurants und Dienstleistungen auf Lanzarote anzuzeigen.",
-    cookieP2: "Sie können alle Cookies akzeptieren, um das beste Erlebnis zu genießen, oder sie nach Ihren Wünschen konfigurieren. Essenzielle Cookies sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden.",
-    cookieP3: "Durch die weitere Nutzung der Website akzeptieren Sie unsere Cookie-Richtlinie. Für weitere Informationen konsultieren Sie unsere Datenschutzerklärung und passen Sie Ihre Einstellungen jederzeit an."
+    ]
   }
 };

@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="QLr1Q6nLLxt5R7ss4Q2fDo2KwAKxrln90MCTPKLwqVk" />
-    
     <!-- Primary SEO -->
     <title>LanzaroteGastro | The Ultimate Lanzarote Restaurant Guide</title>
     <meta name="description" content="Discover the best restaurants in Lanzarote. From fresh seafood in El Golfo to authentic tapas in Arrecife. Filter by zone, cuisine, and price to find your perfect table." />
-    <meta name="keywords" content="restaurants lanzarote, donde comer lanzarote, mejores restaurantes lanzarote, guia restaurantes lanzarote, best restaurants lanzarote, where to eat in lanzarote, playa blanca restaurants, puerto del carmen dining, costa teguise restaurants, arrecife dining, comida canaria lanzarote, restaurantes con vistas al mar lanzarote, comer barato lanzarote, pescado fresco el golfo" />
+    <meta name="keywords" content="restaurants lanzarote, wo essen auf lanzarote, beste restaurants lanzarote, restaurantführer lanzarote, restaurantverzeichnis lanzarote, essen gehen lanzarote, best restaurants in lanzarote, where to eat in lanzarote, lanzarote restaurant guide, restaurants in puerto del carmen, restaurants in playa blanca, restaurants in costa teguise, restaurants in arrecife, kanarische küche lanzarote, restaurants mit meerblick lanzarote, günstig essen lanzarote, frischer fisch lanzarote, familienrestaurants lanzarote, romantisches abendessen lanzarote" />
     <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="QLr1Q6nLLxt5R7ss4Q2fDo2KwAKxrln90MCTPKLwqVk" />
     <link rel="canonical" href="https://lanzarotegastro.com" />
 
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9271869468286466" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -31,7 +29,6 @@
     <meta property="twitter:description" content="Find the best places to eat in Lanzarote. Real reviews, menus, and local hidden gems." />
     <meta property="twitter:image" content="https://images.unsplash.com/photo-1552550150-1376378e9b04?q=80&w=1200&auto=format&fit=crop" />
 
-    <!-- Tailwind CSS (CDN kept for simplicity in this specific setup, usually you would install it via npm) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,24 +55,11 @@
         background: #0d9488;
       }
     </style>
-<script>
-  // Robust Polyfill for process.env
-  (function() {
-    var global = window || self;
-    global.process = global.process || {};
-    global.process.env = global.process.env || {};
-    
-    // Auto-detect environment based on hostname
-    if (!global.process.env.NODE_ENV) {
-      var hostname = global.location.hostname;
-      if (hostname === 'localhost' || hostname === '127.0.0.1') {
-        global.process.env.NODE_ENV = 'development';
-      } else {
-        global.process.env.NODE_ENV = 'production';
-      }
-    }
-  })();
-</script>
+    <script>
+      // Runtime Polyfill for process.env (Safety net)
+      window.process = window.process || {};
+      window.process.env = window.process.env || {};
+    </script>
 <script type="importmap">
 {
   "imports": {
@@ -84,9 +68,9 @@
     "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
     "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-    "vite": "https://aistudiocdn.com/vite@^7.2.6"
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
   }
 }
 </script>
